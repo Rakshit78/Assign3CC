@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import {useState,useEffect} from 'react'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import Screen from './Scrren';
-import First from './First'
+import Screen from './Components/Scrren';
+import First from './Components/First'
 
 
 function App() {
