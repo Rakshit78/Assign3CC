@@ -72,6 +72,7 @@ const First = (props: Props) => {
               count={50}
               style={{ display: 'flex', justifyContent: 'center' }}
               onClick={props.handle}
+              page={props.count}
             />
             <Button
               variant='contained'
