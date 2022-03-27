@@ -1,21 +1,12 @@
 import Button from '@mui/material/Button';
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 type Props = {
   pass: any;
 };
-type P1 = {
-  author: string;
-  created_at: string;
-  story_url: string;
-  title: string;
-};
 
 const Screen = (props: Props) => {
-  console.log(props.pass[0].author);
   const navigate = useNavigate();
-  const [obj, setobj] = useState([]);
   const jdata = {
     author: props.pass[0].author,
     story_title: props.pass[0].story_title,

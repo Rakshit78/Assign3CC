@@ -20,7 +20,6 @@ function App() {
     const data = await res.json();
     arr = [data];
     setlist(arr[0].hits);
-    console.log(arr[0].hits);
     setloading(false);
   }
   useEffect(() => {
