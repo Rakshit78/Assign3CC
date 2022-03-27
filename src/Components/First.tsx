@@ -71,8 +71,10 @@ const First = (props: Props) => {
             <Pagination
               count={50}
               style={{ display: 'flex', justifyContent: 'center' }}
-              onClick={props.handle}
               page={props.count}
+              onChange={(e: any, value: number) => {
+                props.setcount(value);
+              }}
             />
             <Button
               variant='contained'
